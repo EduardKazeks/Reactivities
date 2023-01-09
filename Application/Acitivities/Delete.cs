@@ -25,7 +25,7 @@ namespace Application.Acitivities
 
                 this.context.Remove(activity);
 
-                this.context.SaveChangesAsync();
+                await this.context.SaveChangesAsync();
 
                 return Unit.Value;
             }
